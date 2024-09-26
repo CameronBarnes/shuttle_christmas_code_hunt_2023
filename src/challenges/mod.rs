@@ -1,5 +1,6 @@
 use axum::Router;
 
+mod seven;
 mod six;
 mod five;
 mod four;
@@ -13,4 +14,5 @@ pub fn get_router() -> Router {
         .nest("/4", four::get_router())
         .nest("/5", five::get_router())
         .nest("/6", six::get_router())
+        .nest("/7", seven::get_router())
 }
