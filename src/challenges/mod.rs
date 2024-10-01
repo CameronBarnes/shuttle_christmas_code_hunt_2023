@@ -1,13 +1,14 @@
 use axum::Router;
 
-mod eleven;
 mod eight;
+mod eleven;
 mod five;
 mod four;
 mod neg_one;
 mod one;
 mod seven;
 mod six;
+mod twelve;
 
 pub fn get_router() -> Router {
     Router::new()
@@ -19,4 +20,5 @@ pub fn get_router() -> Router {
         .nest("/7", seven::get_router())
         .nest("/8", eight::get_router())
         .nest("/11", eleven::get_router())
+        .nest("/12", twelve::get_router())
 }
