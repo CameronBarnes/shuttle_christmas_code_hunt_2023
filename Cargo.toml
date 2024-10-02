@@ -22,3 +22,4 @@ ulid = { version = "1.1", features = ["serde"] }
 uuid = { version = "1.10", features = ["serde"] }
 chrono = "0.4"
 sqlx = "0.8"
+html-escape = "0.2"

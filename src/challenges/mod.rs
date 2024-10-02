@@ -11,6 +11,7 @@ mod seven;
 mod six;
 mod thirteen;
 mod twelve;
+mod fourteen;
 
 pub fn get_router(pool: PgPool) -> Router {
     Router::new()
@@ -24,4 +25,5 @@ pub fn get_router(pool: PgPool) -> Router {
         .nest("/11", eleven::get_router())
         .nest("/12", twelve::get_router())
         .nest("/13", thirteen::get_router(pool))
+        .nest("/14", fourteen::get_router())
 }
